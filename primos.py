@@ -1,3 +1,5 @@
+#impotamos time para obtener la hora(en segundos)
+from time import *
 #Funcion para buscar los numeros primos
 def buscarprimos(limite):
     #Iniciamos la lista de los numeros primos con el numero 2
@@ -24,4 +26,11 @@ def buscarprimos(limite):
         i += 2
     print(listaprimos)
 limite=int(input("Dame un numero: "))
+#iniciamos con "tinicial" justo antes de ejecutar la funcion
+tinicial=time()
 buscarprimos(limite)
+#Despues de ejecutar la funcion volvemos a obtener el tiempo
+tfinal=time()
+#el tiempo total sera la diferencia del final-inicial
+ttotal=tfinal-tinicial
+print("El tiempo total de ejecucion fue de:"+str(ttotal)+"s")
