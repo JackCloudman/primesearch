@@ -39,10 +39,10 @@ int main(){
     }
     printf("%d",listaprimos[total]);
     printf("]");
-    printf("\nTiempo: %fs",((double)clock()-start)/1000);
+    printf("\nTiempo: %fs\n",((double)clock()-start)/1000);
   }
   else{
-    printf("Debe ser un numero entero mayor o igual a 2!");
+    printf("Debe ser un numero entero mayor o igual a 2!\n");
   }
   return 1;
 }
