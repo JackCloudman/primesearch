@@ -10,6 +10,7 @@ int main(){
   scanf("%f",&num );
   numint=num;
   if(num>=2&&(num-numint)==0){
+    //Calculamos la hora de inicio
     clock_t start = clock();
     int *listaprimos;
     listaprimos=(int*)calloc(1,sizeof(int));
